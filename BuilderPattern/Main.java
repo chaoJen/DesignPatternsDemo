@@ -13,11 +13,13 @@ public class Main {
 			Director direct = new Director(new TextBuilder());
 			String result = (String) direct.construct();
 			System.out.println(result);
+
 		} else if (args[0].equals("html")) {
 
 			Director direct = new Director(new HTMLBuilder());
 			String filename = (String) direct.construct();
 			System.out.println("new " + filename + ".");
+			
 		} else {
 			
 			usage();
